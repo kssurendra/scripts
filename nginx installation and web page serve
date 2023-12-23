@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Updare System
+echo "system updating"
+sudo apt-get update -y
+
+#install nginx
+echo "nginx installation started"
+sudo apt-get install nginx -y
+
+# start and enable
+echo "service on"
+sudo systemctl start nginx
+
+sudo systemctl enable nginx
+
+echo "<h1> hello dosto </h1>" > index.html
+sudo cp index.html /var/www/html
+
+
