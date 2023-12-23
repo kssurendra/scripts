@@ -1,0 +1,7 @@
+#!/bin/bash
+dir=/home/ubuntu/test/script/*.sh
+
+for files in $dir
+do
+        echo $files
+done
